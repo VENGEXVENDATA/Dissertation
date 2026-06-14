@@ -1,0 +1,24 @@
+2026-06-05 15:49:54 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:49:54 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: SP500
+2026-06-05 15:49:54 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:50:49 | pipelines.run_networks         | INFO     | SP500 Network Sequence compiled successfully: 3713 temporal graphs.
+2026-06-05 15:50:49 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:50:49 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: NIFTY50
+2026-06-05 15:50:49 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:51:46 | pipelines.run_networks         | INFO     | NIFTY50 Network Sequence compiled successfully: 3640 temporal graphs.
+2026-06-05 15:51:46 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:51:46 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: BOVESPA
+2026-06-05 15:51:46 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:51:46 | pipelines.run_networks         | ERROR    | Network sequence construction failed for market bovespa: NaN found as an edge weight. Edge ('VALE3.SA', 'SUZB3.SA', {'distance': np.float64(nan), 'weight': 1000000.0})
+2026-06-05 15:52:58 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:52:58 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: SP500
+2026-06-05 15:52:58 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:53:59 | pipelines.run_networks         | INFO     | SP500 Network Sequence compiled successfully: 3713 temporal graphs.
+2026-06-05 15:53:59 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:53:59 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: NIFTY50
+2026-06-05 15:53:59 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:55:12 | pipelines.run_networks         | INFO     | NIFTY50 Network Sequence compiled successfully: 3640 temporal graphs.
+2026-06-05 15:55:12 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:55:12 | pipelines.run_networks         | INFO     | Building Network Sequence for Market: BOVESPA
+2026-06-05 15:55:12 | pipelines.run_networks         | INFO     | ============================================================
+2026-06-05 15:56:27 | pipelines.run_networks         | INFO     | BOVESPA Network Sequence compiled successfully: 3664 temporal graphs.

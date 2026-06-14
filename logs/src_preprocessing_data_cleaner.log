@@ -1,0 +1,18 @@
+2026-06-05 15:46:09 | src.preprocessing.data_cleaner | INFO     | Preprocessing sp500: initial shape (3773, 500)
+2026-06-05 15:46:09 | src.preprocessing.data_cleaner | INFO     | sp500: 429 tickers passed the <  5% missing filter
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for sp500 (N=30 assets)
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | Preprocessing nifty50: initial shape (3700, 49)
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | nifty50: 46 tickers passed the <  5% missing filter
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for nifty50 (N=30 assets)
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | Preprocessing bovespa: initial shape (3724, 46)
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | bovespa: 35 tickers passed the <  5% missing filter
+2026-06-05 15:46:10 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for bovespa (N=30 assets)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Preprocessing sp500: initial shape (3773, 500)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | sp500: 429 tickers passed the <  5% missing filter
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for sp500 (N=30 assets)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Preprocessing nifty50: initial shape (3700, 49)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | nifty50: 46 tickers passed the <  5% missing filter
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for nifty50 (N=30 assets)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Preprocessing bovespa: initial shape (3724, 46)
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | bovespa: 35 tickers passed the <  5% missing filter
+2026-06-05 15:48:46 | src.preprocessing.data_cleaner | INFO     | Successfully exported processed data sets for bovespa (N=30 assets)

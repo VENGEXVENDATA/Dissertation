@@ -1,0 +1,10 @@
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 14:54:57 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-08 14:54:57 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 15:16:53 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-08 15:16:53 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)

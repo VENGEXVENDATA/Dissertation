@@ -1,0 +1,53 @@
+ticker,company_name,sector,industry
+VALE3.SA,Vale,Materials,Mining
+PETR4.SA,Petrobras PN,Energy,Oil & Gas
+PETR3.SA,Petrobras ON,Energy,Oil & Gas
+ITUB4.SA,Itau Unibanco,Financials,Banking
+BBDC4.SA,Bradesco PN,Financials,Banking
+BBAS3.SA,Banco do Brasil,Financials,Banking
+B3SA3.SA,B3 Exchange,Financials,Exchange
+ABEV3.SA,Ambev,Consumer Staples,Beverages
+WEGE3.SA,WEG,Industrials,Motors
+RENT3.SA,Localiza,Consumer Disc.,Car Rental
+SUZB3.SA,Suzano,Materials,Pulp & Paper
+RDOR3.SA,Rede DOr,Healthcare,Hospitals
+HAPV3.SA,Hapvida,Healthcare,Insurance
+RAIL3.SA,Rumo Logistica,Industrials,Logistics
+CMIG4.SA,Cemig,Utilities,Power
+SBSP3.SA,Sabesp,Utilities,Water
+ENEV3.SA,Eneva,Utilities,Power
+CSAN3.SA,Cosan,Energy,Oil & Gas
+UGPA3.SA,Ultrapar,Energy,Oil & Gas
+BPAC11.SA,BTG Pactual,Financials,Banking
+ITSA4.SA,Itausa,Financials,Holding
+GGBR4.SA,Gerdau PN,Materials,Steel
+CSNA3.SA,CSN,Materials,Steel
+USIM5.SA,Usiminas,Materials,Steel
+PRIO3.SA,PetroRio,Energy,Oil & Gas
+VBBR3.SA,Vibra Energia,Energy,Oil & Gas
+LREN3.SA,Lojas Renner,Consumer Disc.,Retail
+MGLU3.SA,Magazine Luiza,Consumer Disc.,Retail
+BEEF3.SA,Minerva Foods,Consumer Staples,Food
+SMTO3.SA,Sao Martinho,Consumer Staples,Sugar
+FLRY3.SA,Fleury,Healthcare,Diagnostics
+RADL3.SA,Raia Drogasil,Healthcare,Pharmacy
+TOTS3.SA,Totvs,Technology,Software
+CYRE3.SA,Cyrela,Real Estate,Construction
+MRVE3.SA,MRV Engenharia,Real Estate,Construction
+EZTC3.SA,EZTEC,Real Estate,Construction
+MULT3.SA,Multiplan,Real Estate,Shopping Malls
+IGTI11.SA,Iguatemi,Real Estate,Shopping Malls
+EMBR3.SA,Embraer,Industrials,Aerospace
+CCRO3.SA,CCR,Industrials,Concessions
+YDUQ3.SA,Yduqs,Consumer Disc.,Education
+COGN3.SA,Cogna Educacao,Consumer Disc.,Education
+SANB11.SA,Santander Brasil,Financials,Banking
+BBDC3.SA,Bradesco ON,Financials,Banking
+PSSA3.SA,Porto Seguro,Financials,Insurance
+KLBN11.SA,Klabin,Materials,Pulp & Paper
+DXCO3.SA,Dexco,Materials,Wood Products
+CVCB3.SA,CVC Brasil,Consumer Disc.,Tourism
+ELET3.SA,Eletrobras ON,Utilities,Power
+ELET6.SA,Eletrobras PNB,Utilities,Power
+JBSS3.SA,JBS,Consumer Staples,Food
+BRFS3.SA,BRF,Consumer Staples,Food
