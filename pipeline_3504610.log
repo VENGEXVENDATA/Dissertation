@@ -1,0 +1,9 @@
+2026-06-15 09:29:37 | src.utils.timer                | INFO     | Starting: Approved Dissertation Research Pipeline
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 09:29:38 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-15 09:29:39 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-15 09:29:39 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+[2026-06-15T13:25:31.049] error: *** JOB 3504610 ON landonia11 CANCELLED AT 2026-06-15T13:25:31 DUE TO TIME LIMIT ***
+[2026-06-15T13:29:32.408] error: *** JOB 3504610 ON landonia11 CANCELLED AT 2026-06-15T13:27:14 DUE to SIGNAL Terminated ***
