@@ -1,0 +1,5 @@
+/var/spool/slurmd/job3504397/slurm_script: line 11: /home/s2843292/Dissertation/venv_cluster/bin/activate: No such file or directory
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 13, in <module>
+    import pandas as pd
+ModuleNotFoundError: No module named 'pandas'

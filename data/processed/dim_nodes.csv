@@ -1,0 +1,91 @@
+ticker,company_name,sector,industry,market
+AOS,Unknown,Unknown,Unknown,sp500
+ABT,Unknown,Unknown,Unknown,sp500
+ACN,Unknown,Unknown,Unknown,sp500
+ADBE,Unknown,Unknown,Unknown,sp500
+AMD,Unknown,Unknown,Unknown,sp500
+AES,Unknown,Unknown,Unknown,sp500
+AFL,Unknown,Unknown,Unknown,sp500
+A,Unknown,Unknown,Unknown,sp500
+APD,Unknown,Unknown,Unknown,sp500
+AKAM,Unknown,Unknown,Unknown,sp500
+ALB,Unknown,Unknown,Unknown,sp500
+TSN,Unknown,Unknown,Unknown,sp500
+USB,Unknown,Unknown,Unknown,sp500
+UDR,Unknown,Unknown,Unknown,sp500
+ULTA,Unknown,Unknown,Unknown,sp500
+WM,Unknown,Unknown,Unknown,sp500
+WAT,Unknown,Unknown,Unknown,sp500
+WEC,Unknown,Unknown,Unknown,sp500
+WFC,Unknown,Unknown,Unknown,sp500
+WELL,Unknown,Unknown,Unknown,sp500
+WST,Unknown,Unknown,Unknown,sp500
+WDC,Unknown,Unknown,Unknown,sp500
+WY,Unknown,Unknown,Unknown,sp500
+WSM,Unknown,Unknown,Unknown,sp500
+WMB,Unknown,Unknown,Unknown,sp500
+WTW,Unknown,Unknown,Unknown,sp500
+WYNN,Unknown,Unknown,Unknown,sp500
+XEL,Unknown,Unknown,Unknown,sp500
+YUM,Unknown,Unknown,Unknown,sp500
+ZBH,Unknown,Unknown,Unknown,sp500
+RELIANCE.NS,Reliance Industries,Energy,Oil & Gas,nifty50
+TCS.NS,Tata Consultancy Services,Technology,IT Services,nifty50
+HDFCBANK.NS,HDFC Bank,Financials,Banking,nifty50
+BHARTIARTL.NS,Bharti Airtel,Communication,Telecom,nifty50
+ICICIBANK.NS,ICICI Bank,Financials,Banking,nifty50
+INFY.NS,Infosys,Technology,IT Services,nifty50
+SBIN.NS,State Bank of India,Financials,Banking,nifty50
+HINDUNILVR.NS,Hindustan Unilever,Consumer Staples,FMCG,nifty50
+ITC.NS,ITC Limited,Consumer Staples,Conglomerate,nifty50
+LT.NS,Larsen and Toubro,Industrials,Engineering,nifty50
+KOTAKBANK.NS,Kotak Mahindra Bank,Financials,Banking,nifty50
+AXISBANK.NS,Axis Bank,Financials,Banking,nifty50
+BAJFINANCE.NS,Bajaj Finance,Financials,NBFC,nifty50
+WIPRO.NS,Wipro,Technology,IT Services,nifty50
+HCLTECH.NS,HCL Technologies,Technology,IT Services,nifty50
+ASIANPAINT.NS,Asian Paints,Materials,Paints,nifty50
+MARUTI.NS,Maruti Suzuki,Consumer Disc.,Automobiles,nifty50
+SUNPHARMA.NS,Sun Pharmaceutical,Healthcare,Pharma,nifty50
+TITAN.NS,Titan Company,Consumer Disc.,Jewellery,nifty50
+ULTRACEMCO.NS,UltraTech Cement,Materials,Cement,nifty50
+ONGC.NS,Oil and Natural Gas Corp,Energy,Oil & Gas,nifty50
+NTPC.NS,NTPC Limited,Utilities,Power,nifty50
+POWERGRID.NS,Power Grid Corporation,Utilities,Power,nifty50
+M&M.NS,Mahindra and Mahindra,Consumer Disc.,Automobiles,nifty50
+TATASTEEL.NS,Tata Steel,Materials,Steel,nifty50
+ADANIENT.NS,Adani Enterprises,Industrials,Conglomerate,nifty50
+ADANIPORTS.NS,Adani Ports,Industrials,Ports,nifty50
+BAJAJFINSV.NS,Bajaj Finserv,Financials,NBFC,nifty50
+JSWSTEEL.NS,JSW Steel,Materials,Steel,nifty50
+TECHM.NS,Tech Mahindra,Technology,IT Services,nifty50
+VALE3.SA,Vale,Materials,Mining,bovespa
+PETR4.SA,Petrobras PN,Energy,Oil & Gas,bovespa
+PETR3.SA,Petrobras ON,Energy,Oil & Gas,bovespa
+ITUB4.SA,Itau Unibanco,Financials,Banking,bovespa
+BBDC4.SA,Bradesco PN,Financials,Banking,bovespa
+BBAS3.SA,Banco do Brasil,Financials,Banking,bovespa
+ABEV3.SA,Ambev,Consumer Staples,Beverages,bovespa
+WEGE3.SA,WEG,Industrials,Motors,bovespa
+RENT3.SA,Localiza,Consumer Disc.,Car Rental,bovespa
+SUZB3.SA,Suzano,Materials,Pulp & Paper,bovespa
+CMIG4.SA,Cemig,Utilities,Power,bovespa
+SBSP3.SA,Sabesp,Utilities,Water,bovespa
+ENEV3.SA,Eneva,Utilities,Power,bovespa
+CSAN3.SA,Cosan,Energy,Oil & Gas,bovespa
+UGPA3.SA,Ultrapar,Energy,Oil & Gas,bovespa
+ITSA4.SA,Itausa,Financials,Holding,bovespa
+GGBR4.SA,Gerdau PN,Materials,Steel,bovespa
+CSNA3.SA,CSN,Materials,Steel,bovespa
+USIM5.SA,Usiminas,Materials,Steel,bovespa
+LREN3.SA,Lojas Renner,Consumer Disc.,Retail,bovespa
+BEEF3.SA,Minerva Foods,Consumer Staples,Food,bovespa
+SMTO3.SA,Sao Martinho,Consumer Staples,Sugar,bovespa
+FLRY3.SA,Fleury,Healthcare,Diagnostics,bovespa
+RADL3.SA,Raia Drogasil,Healthcare,Pharmacy,bovespa
+MRVE3.SA,MRV Engenharia,Real Estate,Construction,bovespa
+EZTC3.SA,EZTEC,Real Estate,Construction,bovespa
+MULT3.SA,Multiplan,Real Estate,Shopping Malls,bovespa
+YDUQ3.SA,Yduqs,Consumer Disc.,Education,bovespa
+SANB11.SA,Santander Brasil,Financials,Banking,bovespa
+BBDC3.SA,Bradesco ON,Financials,Banking,bovespa

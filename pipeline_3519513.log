@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 22, in <module>
+    from src.network.network_engine import compute_mantegna_distances
+  File "/home/s2843292/Dissertation/Dissertation/src/network/network_engine.py", line 43
+    for i in range(len(tickers)): [cite: 10]
+                                       ^
+SyntaxError: invalid syntax

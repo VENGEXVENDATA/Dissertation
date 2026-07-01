@@ -1,0 +1,14 @@
+#!/bin/bash
+#SBATCH --job-name=dissertation_pipeline
+#SBATCH --partition=Teaching
+#SBATCH --nodes=1
+#SBATCH --ntasks-per-node=1
+#SBATCH --cpus-per-task=16
+#SBATCH --time=12:00:00
+#SBATCH --output=pipeline_%j.log
+
+smadnoasf# Activate your cluster virtual environment
+source venv_cluster/bin/activate
+
+# Execute your script with UNBUFFERED logging
+python -u pipelines/run_pipeline.py

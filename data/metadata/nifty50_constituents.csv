@@ -1,0 +1,51 @@
+ticker,company_name,sector,industry
+RELIANCE.NS,Reliance Industries,Energy,Oil & Gas
+TCS.NS,Tata Consultancy Services,Technology,IT Services
+HDFCBANK.NS,HDFC Bank,Financials,Banking
+BHARTIARTL.NS,Bharti Airtel,Communication,Telecom
+ICICIBANK.NS,ICICI Bank,Financials,Banking
+INFY.NS,Infosys,Technology,IT Services
+SBIN.NS,State Bank of India,Financials,Banking
+HINDUNILVR.NS,Hindustan Unilever,Consumer Staples,FMCG
+ITC.NS,ITC Limited,Consumer Staples,Conglomerate
+LT.NS,Larsen and Toubro,Industrials,Engineering
+KOTAKBANK.NS,Kotak Mahindra Bank,Financials,Banking
+AXISBANK.NS,Axis Bank,Financials,Banking
+BAJFINANCE.NS,Bajaj Finance,Financials,NBFC
+WIPRO.NS,Wipro,Technology,IT Services
+HCLTECH.NS,HCL Technologies,Technology,IT Services
+ASIANPAINT.NS,Asian Paints,Materials,Paints
+MARUTI.NS,Maruti Suzuki,Consumer Disc.,Automobiles
+SUNPHARMA.NS,Sun Pharmaceutical,Healthcare,Pharma
+TITAN.NS,Titan Company,Consumer Disc.,Jewellery
+ULTRACEMCO.NS,UltraTech Cement,Materials,Cement
+ONGC.NS,Oil and Natural Gas Corp,Energy,Oil & Gas
+NTPC.NS,NTPC Limited,Utilities,Power
+POWERGRID.NS,Power Grid Corporation,Utilities,Power
+M&M.NS,Mahindra and Mahindra,Consumer Disc.,Automobiles
+TATAMOTORS.NS,Tata Motors,Consumer Disc.,Automobiles
+TATASTEEL.NS,Tata Steel,Materials,Steel
+ADANIENT.NS,Adani Enterprises,Industrials,Conglomerate
+ADANIPORTS.NS,Adani Ports,Industrials,Ports
+COALINDIA.NS,Coal India,Energy,Mining
+BAJAJFINSV.NS,Bajaj Finserv,Financials,NBFC
+JSWSTEEL.NS,JSW Steel,Materials,Steel
+TECHM.NS,Tech Mahindra,Technology,IT Services
+NESTLEIND.NS,Nestle India,Consumer Staples,FMCG
+CIPLA.NS,Cipla,Healthcare,Pharma
+DRREDDY.NS,Dr Reddys Laboratories,Healthcare,Pharma
+HINDALCO.NS,Hindalco Industries,Materials,Aluminium
+GRASIM.NS,Grasim Industries,Materials,Cement
+DIVISLAB.NS,Divis Laboratories,Healthcare,Pharma
+EICHERMOT.NS,Eicher Motors,Consumer Disc.,Automobiles
+BPCL.NS,Bharat Petroleum,Energy,Oil & Gas
+HEROMOTOCO.NS,Hero MotoCorp,Consumer Disc.,Automobiles
+BRITANNIA.NS,Britannia Industries,Consumer Staples,FMCG
+APOLLOHOSP.NS,Apollo Hospitals,Healthcare,Hospitals
+BAJAJ-AUTO.NS,Bajaj Auto,Consumer Disc.,Automobiles
+TATACONSUM.NS,Tata Consumer Products,Consumer Staples,FMCG
+SBILIFE.NS,SBI Life Insurance,Financials,Insurance
+HDFCLIFE.NS,HDFC Life Insurance,Financials,Insurance
+INDUSINDBK.NS,IndusInd Bank,Financials,Banking
+SHRIRAMFIN.NS,Shriram Finance,Financials,NBFC
+BEL.NS,Bharat Electronics,Industrials,Defence

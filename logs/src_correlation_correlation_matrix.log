@@ -1,0 +1,159 @@
+2026-06-08 14:54:57 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-08 15:16:53 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-15 08:26:02 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-15 09:29:38 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-15 16:57:20 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
+2026-06-15 23:44:52 | src.correlation.correlation_matrix | INFO     | NIFTY50 Universe filtering: 46 of 49 tickers passed the <  5% gap filter.
+2026-06-15 23:45:47 | src.correlation.correlation_matrix | INFO     | BOVESPA Universe filtering: 35 of 46 tickers passed the <  5% gap filter.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-06-25 11:26:48 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-06-25 11:26:49 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-06-25 11:26:52 | src.correlation.correlation_matrix | WARNING  | NIFTY50: Dropped COALINDIA.NS due to an extensive flatline streak of 212 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | INFO     | NIFTY50 Universe filtering: 46 of 49 tickers passed all quality checks.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 171 historical chunks (w=126, step=21).
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PETR4.SA due to an extensive flatline streak of 9 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped BBDC4.SA due to an extensive flatline streak of 22 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SUZB3.SA due to an extensive flatline streak of 390 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped ENEV3.SA due to an extensive flatline streak of 7 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped UGPA3.SA due to an extensive flatline streak of 132 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped GGBR4.SA due to an extensive flatline streak of 46 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CSNA3.SA due to an extensive flatline streak of 25 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped USIM5.SA due to an extensive flatline streak of 8 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PRIO3.SA due to an extensive flatline streak of 201 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped LREN3.SA due to an extensive flatline streak of 56 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped MGLU3.SA due to an extensive flatline streak of 327 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped FLRY3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CYRE3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped YDUQ3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SANB11.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped DXCO3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | INFO     | BOVESPA Universe filtering: 21 of 46 tickers passed all quality checks.
+2026-06-25 11:26:53 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 172 historical chunks (w=126, step=21).
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-06-25 11:28:18 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | NIFTY50: Dropped COALINDIA.NS due to an extensive flatline streak of 212 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | INFO     | NIFTY50 Universe filtering: 46 of 49 tickers passed all quality checks.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 171 historical chunks (w=126, step=21).
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PETR4.SA due to an extensive flatline streak of 9 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped BBDC4.SA due to an extensive flatline streak of 22 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SUZB3.SA due to an extensive flatline streak of 390 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped ENEV3.SA due to an extensive flatline streak of 7 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped UGPA3.SA due to an extensive flatline streak of 132 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped GGBR4.SA due to an extensive flatline streak of 46 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CSNA3.SA due to an extensive flatline streak of 25 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped USIM5.SA due to an extensive flatline streak of 8 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PRIO3.SA due to an extensive flatline streak of 201 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped LREN3.SA due to an extensive flatline streak of 56 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped MGLU3.SA due to an extensive flatline streak of 327 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped FLRY3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CYRE3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped YDUQ3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SANB11.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped DXCO3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | INFO     | BOVESPA Universe filtering: 21 of 46 tickers passed all quality checks.
+2026-06-25 11:28:22 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 172 historical chunks (w=126, step=21).
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-06-25 11:31:04 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-06-25 11:31:05 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-06-25 11:31:05 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-06-25 11:31:05 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-06-25 11:31:05 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-06-25 11:31:05 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | NIFTY50: Dropped COALINDIA.NS due to an extensive flatline streak of 212 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | INFO     | NIFTY50 Universe filtering: 46 of 49 tickers passed all quality checks.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 171 historical chunks (w=126, step=21).
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PETR4.SA due to an extensive flatline streak of 9 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped BBDC4.SA due to an extensive flatline streak of 22 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SUZB3.SA due to an extensive flatline streak of 390 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped ENEV3.SA due to an extensive flatline streak of 7 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped UGPA3.SA due to an extensive flatline streak of 132 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped GGBR4.SA due to an extensive flatline streak of 46 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CSNA3.SA due to an extensive flatline streak of 25 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped USIM5.SA due to an extensive flatline streak of 8 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PRIO3.SA due to an extensive flatline streak of 201 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped LREN3.SA due to an extensive flatline streak of 56 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped MGLU3.SA due to an extensive flatline streak of 327 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped FLRY3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CYRE3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 11:31:13 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped YDUQ3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:31:14 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SANB11.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:31:14 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped DXCO3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 11:31:14 | src.correlation.correlation_matrix | INFO     | BOVESPA Universe filtering: 21 of 46 tickers passed all quality checks.
+2026-06-25 11:31:14 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 172 historical chunks (w=126, step=21).
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-06-25 12:10:16 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-06-25 18:31:36 | src.correlation.correlation_matrix | WARNING  | NIFTY50: Dropped COALINDIA.NS due to an extensive flatline streak of 212 days.
+2026-06-25 18:31:36 | src.correlation.correlation_matrix | INFO     | NIFTY50 Universe filtering: 46 of 49 tickers passed all quality checks.
+2026-06-25 18:31:36 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 171 historical chunks (w=126, step=21).
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PETR4.SA due to an extensive flatline streak of 9 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped BBDC4.SA due to an extensive flatline streak of 22 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SUZB3.SA due to an extensive flatline streak of 390 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped ENEV3.SA due to an extensive flatline streak of 7 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped UGPA3.SA due to an extensive flatline streak of 132 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped GGBR4.SA due to an extensive flatline streak of 46 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CSNA3.SA due to an extensive flatline streak of 25 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped USIM5.SA due to an extensive flatline streak of 8 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped PRIO3.SA due to an extensive flatline streak of 201 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped LREN3.SA due to an extensive flatline streak of 56 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped MGLU3.SA due to an extensive flatline streak of 327 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped FLRY3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped CYRE3.SA due to an extensive flatline streak of 6 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped YDUQ3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped SANB11.SA due to an extensive flatline streak of 5 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | WARNING  | BOVESPA: Dropped DXCO3.SA due to an extensive flatline streak of 5 days.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | INFO     | BOVESPA Universe filtering: 21 of 46 tickers passed all quality checks.
+2026-06-25 18:32:29 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 172 historical chunks (w=126, step=21).

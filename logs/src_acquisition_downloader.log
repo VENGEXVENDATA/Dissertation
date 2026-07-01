@@ -1,0 +1,101 @@
+2026-06-05 15:23:43 | src.acquisition.downloader     | INFO     | Downloading 50 tickers for nifty50 (2010-01-01 to 2024-12-31)
+2026-06-05 15:23:51 | src.acquisition.downloader     | WARNING  | All NaN for INFOSYS.NS — skipping
+2026-06-05 15:23:51 | src.acquisition.downloader     | WARNING  | All NaN for TATAMOTORS.NS — skipping
+2026-06-05 15:23:52 | src.acquisition.downloader     | INFO     | Saved nifty50: shape=(3700, 48), failed=2 tickers, path=data\raw\prices_nifty50.parquet
+2026-06-05 15:23:52 | src.acquisition.downloader     | WARNING  | Failed tickers saved to data\raw\failed_tickers_nifty50.txt
+2026-06-05 15:23:52 | src.acquisition.downloader     | INFO     | Downloading 62 tickers for bovespa (2010-01-01 to 2024-12-31)
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for ELET3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for ELET6.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for CPLE6.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for EMBR3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for VIIA3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for MRFG3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for JBSS3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for BRFS3.SA — skipping
+2026-06-05 15:23:54 | src.acquisition.downloader     | WARNING  | All NaN for CCRO3.SA — skipping
+2026-06-05 15:23:57 | src.acquisition.downloader     | WARNING  | All NaN for AZUL4.SA — skipping
+2026-06-05 15:23:57 | src.acquisition.downloader     | WARNING  | All NaN for GOLL4.SA — skipping
+2026-06-05 15:23:58 | src.acquisition.downloader     | INFO     | Saved bovespa: shape=(3724, 51), failed=11 tickers, path=data\raw\prices_bovespa.parquet
+2026-06-05 15:23:58 | src.acquisition.downloader     | WARNING  | Failed tickers saved to data\raw\failed_tickers_bovespa.txt
+2026-06-05 15:27:27 | src.acquisition.downloader     | INFO     | Downloading 50 tickers for nifty50 (2010-01-01 to 2024-12-31)
+2026-06-05 15:27:30 | src.acquisition.downloader     | WARNING  | All NaN for TATAMOTORS.NS — skipping
+2026-06-05 15:27:30 | src.acquisition.downloader     | INFO     | Saved nifty50: shape=(3700, 49), failed=1 tickers, path=data\raw\prices_nifty50.parquet
+2026-06-05 15:27:30 | src.acquisition.downloader     | WARNING  | Failed tickers saved to data\raw\failed_tickers_nifty50.txt
+2026-06-05 15:27:30 | src.acquisition.downloader     | INFO     | Downloading 52 tickers for bovespa (2010-01-01 to 2024-12-31)
+2026-06-05 15:27:32 | src.acquisition.downloader     | WARNING  | All NaN for EMBR3.SA — skipping
+2026-06-05 15:27:32 | src.acquisition.downloader     | WARNING  | All NaN for CCRO3.SA — skipping
+2026-06-05 15:27:32 | src.acquisition.downloader     | WARNING  | All NaN for ELET3.SA — skipping
+2026-06-05 15:27:32 | src.acquisition.downloader     | WARNING  | All NaN for ELET6.SA — skipping
+2026-06-05 15:27:35 | src.acquisition.downloader     | WARNING  | Empty batch 1 — falling back to individual
+2026-06-05 15:27:35 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 1)
+2026-06-05 15:27:37 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 2)
+2026-06-05 15:27:39 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 3)
+2026-06-05 15:27:41 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for JBSS3.SA — skipping
+2026-06-05 15:27:41 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 1)
+2026-06-05 15:27:43 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 2)
+2026-06-05 15:27:45 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 3)
+2026-06-05 15:27:47 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for BRFS3.SA — skipping
+2026-06-05 15:27:47 | src.acquisition.downloader     | INFO     | Saved bovespa: shape=(3724, 46), failed=6 tickers, path=data\raw\prices_bovespa.parquet
+2026-06-05 15:27:47 | src.acquisition.downloader     | WARNING  | Failed tickers saved to data\raw\failed_tickers_bovespa.txt
+2026-06-05 15:30:59 | src.acquisition.downloader     | INFO     | Found existing data at data\raw\prices_nifty50.parquet — loading
+2026-06-05 15:31:00 | src.acquisition.downloader     | INFO     | Found existing data at data\raw\prices_bovespa.parquet — loading
+2026-06-05 15:32:48 | src.acquisition.downloader     | INFO     | Downloading 50 tickers for nifty50 (2010-01-01 to 2024-12-31)
+2026-06-05 15:32:54 | src.acquisition.downloader     | WARNING  | Data check failed for TATAMOTORS.NS — processing individually
+2026-06-05 15:32:54 | src.acquisition.downloader     | WARNING  | No data returned for TATAMOTORS.NS (attempt 1)
+2026-06-05 15:32:56 | src.acquisition.downloader     | WARNING  | No data returned for TATAMOTORS.NS (attempt 2)
+2026-06-05 15:32:58 | src.acquisition.downloader     | WARNING  | No data returned for TATAMOTORS.NS (attempt 3)
+2026-06-05 15:33:00 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for TATAMOTORS.NS — skipping
+2026-06-05 15:33:08 | src.acquisition.downloader     | INFO     | Saved nifty50: shape=(3700, 49), failed=1 tickers, path=data\raw\prices_nifty50.parquet
+2026-06-05 15:33:08 | src.acquisition.downloader     | WARNING  | Failed log written to data\raw\failed_tickers_nifty50.txt
+2026-06-05 15:33:08 | src.acquisition.downloader     | INFO     | Downloading 52 tickers for bovespa (2010-01-01 to 2024-12-31)
+2026-06-05 15:33:20 | src.acquisition.downloader     | WARNING  | Data check failed for EMBR3.SA — processing individually
+2026-06-05 15:33:20 | src.acquisition.downloader     | WARNING  | No data returned for EMBR3.SA (attempt 1)
+2026-06-05 15:33:22 | src.acquisition.downloader     | WARNING  | No data returned for EMBR3.SA (attempt 2)
+2026-06-05 15:33:24 | src.acquisition.downloader     | WARNING  | No data returned for EMBR3.SA (attempt 3)
+2026-06-05 15:33:26 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for EMBR3.SA — skipping
+2026-06-05 15:33:26 | src.acquisition.downloader     | WARNING  | Data check failed for CCRO3.SA — processing individually
+2026-06-05 15:33:26 | src.acquisition.downloader     | WARNING  | No data returned for CCRO3.SA (attempt 1)
+2026-06-05 15:33:28 | src.acquisition.downloader     | WARNING  | No data returned for CCRO3.SA (attempt 2)
+2026-06-05 15:33:30 | src.acquisition.downloader     | WARNING  | No data returned for CCRO3.SA (attempt 3)
+2026-06-05 15:33:32 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for CCRO3.SA — skipping
+2026-06-05 15:33:32 | src.acquisition.downloader     | WARNING  | Data check failed for ELET3.SA — processing individually
+2026-06-05 15:33:32 | src.acquisition.downloader     | WARNING  | No data returned for ELET3.SA (attempt 1)
+2026-06-05 15:33:34 | src.acquisition.downloader     | WARNING  | No data returned for ELET3.SA (attempt 2)
+2026-06-05 15:33:36 | src.acquisition.downloader     | WARNING  | No data returned for ELET3.SA (attempt 3)
+2026-06-05 15:33:38 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for ELET3.SA — skipping
+2026-06-05 15:33:38 | src.acquisition.downloader     | WARNING  | Data check failed for ELET6.SA — processing individually
+2026-06-05 15:33:38 | src.acquisition.downloader     | WARNING  | No data returned for ELET6.SA (attempt 1)
+2026-06-05 15:33:40 | src.acquisition.downloader     | WARNING  | No data returned for ELET6.SA (attempt 2)
+2026-06-05 15:33:42 | src.acquisition.downloader     | WARNING  | No data returned for ELET6.SA (attempt 3)
+2026-06-05 15:33:44 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for ELET6.SA — skipping
+2026-06-05 15:33:47 | src.acquisition.downloader     | WARNING  | Empty batch 2 — falling back to individual processing
+2026-06-05 15:33:47 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 1)
+2026-06-05 15:33:49 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 2)
+2026-06-05 15:33:51 | src.acquisition.downloader     | WARNING  | No data returned for JBSS3.SA (attempt 3)
+2026-06-05 15:33:53 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for JBSS3.SA — skipping
+2026-06-05 15:33:53 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 1)
+2026-06-05 15:33:55 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 2)
+2026-06-05 15:33:57 | src.acquisition.downloader     | WARNING  | No data returned for BRFS3.SA (attempt 3)
+2026-06-05 15:33:59 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for BRFS3.SA — skipping
+2026-06-05 15:33:59 | src.acquisition.downloader     | INFO     | Saved bovespa: shape=(3724, 46), failed=6 tickers, path=data\raw\prices_bovespa.parquet
+2026-06-05 15:33:59 | src.acquisition.downloader     | WARNING  | Failed log written to data\raw\failed_tickers_bovespa.txt
+2026-06-05 15:37:32 | src.acquisition.downloader     | INFO     | Downloading 503 tickers for sp500 (2010-01-01 to 2024-12-31)
+2026-06-05 15:38:02 | src.acquisition.downloader     | WARNING  | Data check failed for FDXF — processing individually
+2026-06-05 15:38:02 | src.acquisition.downloader     | WARNING  | No data returned for FDXF (attempt 1)
+2026-06-05 15:38:04 | src.acquisition.downloader     | WARNING  | No data returned for FDXF (attempt 2)
+2026-06-05 15:38:06 | src.acquisition.downloader     | WARNING  | No data returned for FDXF (attempt 3)
+2026-06-05 15:38:08 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for FDXF — skipping
+2026-06-05 15:38:44 | src.acquisition.downloader     | WARNING  | Data check failed for Q — processing individually
+2026-06-05 15:38:44 | src.acquisition.downloader     | WARNING  | No data returned for Q (attempt 1)
+2026-06-05 15:38:46 | src.acquisition.downloader     | WARNING  | No data returned for Q (attempt 2)
+2026-06-05 15:38:48 | src.acquisition.downloader     | WARNING  | No data returned for Q (attempt 3)
+2026-06-05 15:38:50 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for Q — skipping
+2026-06-05 15:38:54 | src.acquisition.downloader     | WARNING  | Data check failed for SNDK — processing individually
+2026-06-05 15:38:54 | src.acquisition.downloader     | WARNING  | No data returned for SNDK (attempt 1)
+2026-06-05 15:38:56 | src.acquisition.downloader     | WARNING  | No data returned for SNDK (attempt 2)
+2026-06-05 15:38:58 | src.acquisition.downloader     | WARNING  | No data returned for SNDK (attempt 3)
+2026-06-05 15:39:00 | src.acquisition.downloader     | ERROR    | All 3 attempts failed for SNDK — skipping
+2026-06-05 15:39:17 | src.acquisition.downloader     | INFO     | Saved sp500: shape=(3773, 500), failed=3 tickers, path=data\raw\prices_sp500.parquet
+2026-06-05 15:39:17 | src.acquisition.downloader     | WARNING  | Failed log written to data\raw\failed_tickers_sp500.txt
+2026-06-05 15:39:17 | src.acquisition.downloader     | INFO     | Found existing data at data\raw\prices_nifty50.parquet — loading
+2026-06-05 15:39:17 | src.acquisition.downloader     | INFO     | Found existing data at data\raw\prices_bovespa.parquet — loading

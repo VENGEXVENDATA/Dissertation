@@ -1,0 +1,240 @@
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-08 14:54:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 14:54:57 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-08 14:54:57 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-08 15:16:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-08 15:16:53 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-08 15:16:53 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 08:26:03 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-15 08:26:03 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-15 09:29:37 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 09:29:39 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-15 09:29:39 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
+2026-06-15 16:56:54 | pipelines.run_pipeline         | INFO     | Initializing multi-core process engine mapping to 8 available CPUs.
+2026-06-15 16:57:15 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 16:57:15 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-15 16:57:15 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 16:57:20 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-15 16:57:20 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-15 23:39:00 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for SP500...
+2026-06-15 23:44:49 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-06-15 23:44:49 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 23:44:49 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-06-15 23:44:49 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 23:44:52 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-06-15 23:44:52 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-15 23:45:16 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for NIFTY50...
+2026-06-15 23:45:46 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-06-15 23:45:46 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 23:45:46 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-06-15 23:45:46 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-15 23:45:47 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-06-15 23:45:47 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-15 23:45:58 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
+2026-06-15 23:46:22 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-06-15 23:46:22 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-06-25 11:26:47 | pipelines.run_pipeline         | INFO     | Initializing multi-core process engine mapping to 8 available CPUs.
+2026-06-25 11:26:47 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:47 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-25 11:26:47 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:49 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-25 11:26:49 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:26:52 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for SP500...
+2026-06-25 11:26:52 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for sp500: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:26:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:52 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-06-25 11:26:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for NIFTY50...
+2026-06-25 11:26:53 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for nifty50: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:26:53 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
+2026-06-25 11:26:53 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for bovespa: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | Initializing multi-core process engine mapping to 8 available CPUs.
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-25 11:28:18 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for SP500...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for sp500: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for NIFTY50...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for nifty50: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
+2026-06-25 11:28:22 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for bovespa: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:31:03 | pipelines.run_pipeline         | INFO     | Initializing multi-core process engine mapping to 8 available CPUs.
+2026-06-25 11:31:03 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:03 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-25 11:31:03 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:05 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-25 11:31:05 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for SP500...
+2026-06-25 11:31:13 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for sp500: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for NIFTY50...
+2026-06-25 11:31:13 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for nifty50: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-06-25 11:31:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 11:31:14 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-06-25 11:31:14 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 11:31:14 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
+2026-06-25 11:31:14 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for bovespa: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 107, in main
+    macro_trend = stability_ledger[["date", "market", "ari_stability"]].drop_duplicates()
+                  ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/frame.py", line 4384, in __getitem__
+    indexer = self.columns._get_indexer_strict(key, "columns")[1]
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6302, in _get_indexer_strict
+    self._raise_if_missing(keyarr, indexer, axis_name)
+  File "/home/s2843292/Dissertation/Dissertation/venv_cluster/lib/python3.12/site-packages/pandas/core/indexes/base.py", line 6352, in _raise_if_missing
+    raise KeyError(f"None of [{key}] are in the [{axis_name}]")
+KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are in the [columns]"
+2026-06-25 12:10:15 | pipelines.run_pipeline         | INFO     | Initializing multi-core process engine mapping to 8 available CPUs.
+2026-06-25 12:10:15 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 12:10:15 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-06-25 12:10:15 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 12:10:16 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-06-25 12:10:16 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 18:25:43 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for SP500...
+2026-06-25 18:31:34 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-06-25 18:31:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 18:31:34 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-06-25 18:31:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 18:31:36 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-06-25 18:31:36 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 18:31:58 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for NIFTY50...
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-06-25 18:32:29 | pipelines.run_pipeline         | INFO     | Spawning parallel process workers for PMFG planarity constraints...
+2026-06-25 18:32:32 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
+2026-06-25 18:32:47 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-06-25 18:32:47 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv

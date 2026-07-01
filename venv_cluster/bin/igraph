@@ -1,0 +1,6 @@
+#!/home/s2843292/Dissertation/Dissertation/venv_cluster/bin/python
+import sys
+from igraph.app.shell import main
+if __name__ == '__main__':
+    sys.argv[0] = sys.argv[0].removesuffix('.exe')
+    sys.exit(main())

@@ -1,0 +1,15 @@
+2026-06-05 17:13:27 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:13:27 | pipelines.run_community        | INFO     | Extracting Community Stability Dynamics: SP500
+2026-06-05 17:13:27 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:14:20 | pipelines.run_community        | INFO     | Calculating consensus partitions and ARI vectors...
+2026-06-05 17:15:22 | pipelines.run_community        | INFO     | Saved tabular log-ledger to: data/processed/sp500_community_stability.csv
+2026-06-05 17:15:22 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:15:22 | pipelines.run_community        | INFO     | Extracting Community Stability Dynamics: NIFTY50
+2026-06-05 17:15:22 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:16:38 | pipelines.run_community        | INFO     | Calculating consensus partitions and ARI vectors...
+2026-06-05 17:17:58 | pipelines.run_community        | INFO     | Saved tabular log-ledger to: data/processed/nifty50_community_stability.csv
+2026-06-05 17:17:58 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:17:58 | pipelines.run_community        | INFO     | Extracting Community Stability Dynamics: BOVESPA
+2026-06-05 17:17:58 | pipelines.run_community        | INFO     | ============================================================
+2026-06-05 17:19:16 | pipelines.run_community        | INFO     | Calculating consensus partitions and ARI vectors...
+2026-06-05 17:20:35 | pipelines.run_community        | INFO     | Saved tabular log-ledger to: data/processed/bovespa_community_stability.csv
