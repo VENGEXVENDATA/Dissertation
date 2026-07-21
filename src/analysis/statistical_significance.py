@@ -2,13 +2,15 @@
 src/analysis/statistical_significance.py
 =========================================
 Executes directional non-parametric Mann-Whitney U tests to evaluate 
-the significance of ARI distribution drops across baseline and crisis regimes.
+the significance of ARI distribution drops across baseline and calendar-crisis regimes,
+remediating serial autocorrelation bias via adaptive downsampling.
 """
 
 from __future__ import annotations
 
 import yaml
 import pandas as pd
+import numpy as np
 from scipy.stats import mannwhitneyu
 from pathlib import Path
 
@@ -72,21 +74,31 @@ def evaluate_hypothesis_significance(data_path: str | Path) -> None:
     results = []
     
     for market in markets:
-        market_df = pivot_df[pivot_df['market'] == market]
+        market_df = pivot_df[pivot_df['market'] == market].sort_values('date').reset_index(drop=True)
         
-        # Isolate the historic baseline distribution
-        baseline_ari = market_df[market_df['regime'] == 'Baseline']['ari_stability'].dropna()
-        regimes = [r for r in market_df['regime'].unique() if r != 'Baseline']
+        # --- CRITICAL CORRECTION: Check and apply downsampling patch ---
+        ari_raw = market_df['ari_stability'].dropna().values
+        lag_1 = np.corrcoef(ari_raw[1:], ari_raw[:-1])[0, 1]
+        
+        if lag_1 > 0.50:
+            print(f"[REMEDIATION] Autocorrelation severe ({lag_1:.4f}) for {market.upper()}. Applying downsampling (stride=4)...")
+            market_df_remediated = market_df.iloc[::4].reset_index(drop=True)
+        else:
+            market_df_remediated = market_df
+            
+        # Isolate the independent historic baseline distribution
+        baseline_ari = market_df_remediated[market_df_remediated['regime'] == 'Baseline']['ari_stability'].dropna()
+        regimes = [r for r in market_df_remediated['regime'].unique() if r != 'Baseline']
         
         for regime in regimes:
-            regime_ari = market_df[market_df['regime'] == regime]['ari_stability'].dropna()
+            regime_ari = market_df_remediated[market_df_remediated['regime'] == regime]['ari_stability'].dropna()
             
             # Require at least 5 windows to ensure a meaningful test profile
             if len(regime_ari) < 5 or len(baseline_ari) < 5:
                 continue
                 
             # Directional Test: Is the crisis/pre-crisis distribution stochastically
-            # SMALLER than the baseline distribution?
+            # SMALLER (dissolution) than the baseline distribution?
             stat, p_val = mannwhitneyu(regime_ari, baseline_ari, alternative='less')
             
             results.append({
@@ -100,9 +112,12 @@ def evaluate_hypothesis_significance(data_path: str | Path) -> None:
             
     results_df = pd.DataFrame(results)
     print("\n" + "="*85)
-    print("    MANN-WHITNEY U TEST: REGIME STABILITY DISTRIBUTIONS VS BASELINE")
+    print("    REMEDIATED MANN-WHITNEY U TEST: REGIME STABILITY VS BASELINE")
     print("="*85)
-    print(results_df.to_string(index=False, formatters={"p-value": "{:.5f}".format}))
+    if not results_df.empty:
+        print(results_df.to_string(index=False, formatters={"p-value": "{:.5f}".format}))
+    else:
+        print("[WARNING] No regimes met the minimum sample size constraint (N >= 5) after downsampling.")
     print("="*85 + "\n")
 
 if __name__ == "__main__":

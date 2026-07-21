@@ -1,1 +1,6 @@
+# Python virtual environments
+venv_igraph_fast/
+venv/
 .venv/
+env/venv_igraph_fast/
+venv*/

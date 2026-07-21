@@ -2,7 +2,7 @@
 src/analysis/lead_lag_analysis.py
 ==================================
 Calculates the Cross-Correlation Function (CCF) between rolling network 
-stability changes (d_ari) and integrated true price-based volatility indices.
+stability levels (ari_stability) and integrated true market-specific implied volatility indices.
 """
 
 from __future__ import annotations
@@ -22,7 +22,8 @@ def calculate_cross_correlation(
 ) -> None:
     """
     Computes cross-correlation coefficients across a spectrum of timeline lags
-    to locate where network structural shifts exhibit peak tracking on true volatility.
+    using balanced level-form entries to locate where network structural shifts 
+    exhibit peak tracking on true forward-looking implied volatility indices.
     """
     t_path = Path(trends_path)
     if not t_path.exists():
@@ -35,7 +36,7 @@ def calculate_cross_correlation(
     # Clean string columns of any trailing white spaces from csv serialization
     df.columns = df.columns.str.strip()
     
-    # Diagnostic Check: If the target column isn't found, check alternatives or alert columns
+    # Diagnostic Check: Verify target column presence
     target_vol_col = 'market_volatility'
     if target_vol_col not in df.columns:
         print(f"[WARNING] Exact column '{target_vol_col}' missing from file: {t_path.absolute()}")
@@ -47,7 +48,7 @@ def calculate_cross_correlation(
             target_vol_col = alternatives[0]
             print(f"-> Automatically falling back to detected alternative column: '{target_vol_col}'")
         else:
-            print("[CRITICAL ERROR] No volatility metrics column detected. Please run 'python -m src.analysis.volatility_integration' again to ensure data is synchronized.")
+            print("[CRITICAL ERROR] No volatility metrics column detected. Please run your volatility integration script again to ensure data is synchronized.")
             return
 
     # Apply truncation fix to remove early S&P 500 initialization leakage
@@ -68,11 +69,8 @@ def calculate_cross_correlation(
     for market in markets:
         m_data = pivot_df[pivot_df['market'] == market].copy()
         
-        # Calculate change in ARI stability (first-difference for time-series stationarity)
-        m_data['d_ari'] = m_data['ari_stability'].diff()
-        
-        # Drop initial NaN row created by differencing, and drop missing volatility records
-        m_data = m_data.dropna(subset=['d_ari', target_vol_col])
+        # --- FIXED: Keep both series in level forms to prevent unbalanced CCF properties ---
+        m_data = m_data.dropna(subset=['ari_stability', target_vol_col])
         
         if len(m_data) < max_lag * 2:
             print(f"[WARNING] Skipping {market.upper()}: Insufficient valid observations.")
@@ -84,13 +82,15 @@ def calculate_cross_correlation(
         # Calculate correlation explicitly per lag step to guarantee perfect date index matching
         for lag in lags:
             if lag < 0:
-                shifted_ari = m_data['d_ari'].shift(-lag)
+                # Negative lag: Network leads Volatility
+                shifted_ari = m_data['ari_stability'].shift(-lag)
                 volatility = m_data[target_vol_col]
             elif lag > 0:
-                shifted_ari = m_data['d_ari']
+                # Positive lag: Volatility leads Network
+                shifted_ari = m_data['ari_stability']
                 volatility = m_data[target_vol_col].shift(lag)
             else:
-                shifted_ari = m_data['d_ari']
+                shifted_ari = m_data['ari_stability']
                 volatility = m_data[target_vol_col]
                 
             combined = pd.DataFrame({'x': shifted_ari, 'y': volatility}).dropna()
@@ -107,21 +107,23 @@ def calculate_cross_correlation(
         print(f"Market: {market.upper():<8} | Peak Predictive Lag: {peak_lag:<3} trading days | Correlation: {peak_corr:.4f}")
         
         plt.plot(lags, ccf_profile, label=f"{market.upper()} (Peak Lag: {peak_lag}d, r={peak_corr:.2f})", 
-                 color=colors[market], linewidth=1.8)
+                 color=colors.get(market, '#7f7f7f'), linewidth=1.8)
         
     plt.axvline(0, color='black', linestyle='--', alpha=0.6)
     plt.axhline(0, color='gray', linestyle='-', alpha=0.3)
     plt.xlabel("Lag Parameter $\\tau$ (Days: Negative implies Network leads Volatility)")
     plt.ylabel("Cross-Correlation Coefficient $R(\\tau)$")
-    plt.title("Cross-Correlation Function (CCF) Trajectory: Network Instability vs Price Volatility", loc="left", fontsize=13, fontweight="bold")
+    plt.title("Cross-Correlation Function (CCF) Trajectory: Network Stability vs Price Volatility", loc="left", fontsize=13, fontweight="bold")
     plt.legend(frameon=True, facecolor='white')
     plt.grid(True, linestyle=':', alpha=0.6)
     
     out_png = Path("data/processed/lead_lag_ccf_profile.png")
+    out_png.parent.mkdir(parents=True, exist_ok=True)
     plt.savefig(out_png, dpi=300, bbox_inches='tight')
     plt.close()
+    
     print("===========================================================================")
-    print(f"[SUCCESS] True Lead-Lag structural chart saved to: {out_png}\n")
+    print(f"[SUCCESS] True Balanced Lead-Lag structural chart saved to: {out_png}\n")
 
 if __name__ == "__main__":
     calculate_cross_correlation("data/processed/master_methodology_trends.csv")
