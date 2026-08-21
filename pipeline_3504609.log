@@ -1,9 +1,0 @@
-/var/spool/slurmd/job3504609/slurm_script: line 11: /home/s2843292/Dissertation/venv_cluster/bin/activate: No such file or directory
-2026-06-15 08:26:00 | src.utils.timer                | INFO     | Starting: Approved Dissertation Research Pipeline
-2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | ======================================================================
-2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
-2026-06-15 08:26:00 | pipelines.run_pipeline         | INFO     | ======================================================================
-2026-06-15 08:26:02 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 429 of 500 tickers passed the <  5% gap filter.
-2026-06-15 08:26:03 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
-2026-06-15 08:26:03 | pipelines.run_pipeline         | INFO     | Constructing sequential PMFG networks... (This performs planarity tests)
-[2026-06-15T08:26:34.361] error: *** JOB 3504609 ON landonia11 CANCELLED AT 2026-06-15T08:26:34 DUE to SIGNAL Terminated ***

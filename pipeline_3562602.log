@@ -1,0 +1,178 @@
+2026-07-21 19:16:51 | src.utils.timer                | INFO     | Starting: Approved Parallel Dissertation Research Pipeline
+2026-07-21 19:16:51 | src.utils.config_loader        | INFO     | Project config loaded from config/settings.yaml
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | Initializing process engine with 8 available CPUs.
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-07-21 19:16:52 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-07-21 19:16:52 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-21 19:16:52 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-07-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-01-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-07-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-01-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-01-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-01-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-07-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-07-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-02-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-08-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-08-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-02-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-02-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-02-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-08-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-08-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-03-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-09-01
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-03-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-08-31
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-03-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-09-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-09-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-03-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-04-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-10-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-10-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-04-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-04-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-10-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-04-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-10-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-05-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-11-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-05-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-11-01
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-05-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-05-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-11-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-11-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-06-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-06-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-12-01
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-12-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2012-06-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2011-06-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2013-12-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2010-12-02
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-01-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-07-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-07-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-07-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-01-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-01-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-01-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-07-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-02-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-02-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-08-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-08-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-08-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-02-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-08-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-02-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-03-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-03-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-09-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-09-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-03-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-09-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-09-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-03-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-04-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-04-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-10-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-04-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-10-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-10-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-10-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-05-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-04-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-11-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-05-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-05-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-11-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-11-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-11-03
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-06-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-05-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-12-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-06-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2016-06-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2017-12-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2014-12-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2015-12-04
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-07-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-06-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-01-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-07-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-01-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-07-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-01-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-07-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-08-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-01-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-08-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-02-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-02-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-02-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-08-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-08-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-09-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-03-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-02-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-09-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-03-11
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-03-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-09-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-09-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-10-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-03-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-10-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-04-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-04-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-04-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-10-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-10-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-11-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-05-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-11-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-04-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-05-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-05-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-11-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-11-05
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2018-12-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-06-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-12-06
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-05-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2019-06-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-12-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2020-06-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2021-12-07
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-07-11
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2023-01-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2023-07-12
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-06-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2024-01-10
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2022-08-09
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2024-07-12
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2023-02-08
+   [CORE SUCCESS] Computed & cached PMFG for SP500 window: 2023-08-10
+[2026-07-22T07:16:50.048] error: *** JOB 3562602 ON opencast CANCELLED AT 2026-07-22T07:16:50 DUE TO TIME LIMIT ***

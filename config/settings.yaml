@@ -54,8 +54,18 @@ network:
   weight_formula: "inverse_distance"
 
 community:
-  algorithm_primary: "louvain"
-  algorithm_secondary: "leiden"
+  # Primary Community Algorithm Dispatcher
+  # Supported Choices Across 5 Theoretical Families:
+  #  1. "louvain"  -> Modularity Maximization (Primary Benchmark)
+  #  2. "leiden"   -> Refined Modularity Maximization (Traag et al.)
+  #  3. "infomap"  -> Information Theory & Random Walk Compression
+  #  4. "lpa"      -> Local Label Propagation Consensus Dynamics
+  #  5. "spectral" -> Spectral Decomposition & Laplacian Eigenvectors
+  #  6. "hac"      -> Hierarchical Agglomerative Distance Clustering
+  algorithm_primary: "leiden"
+  algorithm_secondary: "louvain"
+  
+  # Consensus Parameters (Used by Louvain & Leiden)
   consensus_runs: 100
   resolution: 1.0
   random_seed_start: 42

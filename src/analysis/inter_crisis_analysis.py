@@ -15,7 +15,6 @@ import numpy as np
 import yaml
 import scipy.stats as stats
 
-# Maintain repository architecture alignment
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent))
 
 def load_crisis_config(root_dir: Path) -> dict:
@@ -26,11 +25,12 @@ def load_crisis_config(root_dir: Path) -> dict:
         return yaml.safe_load(f) or {}
 
 def calculate_hurst_exponent(time_series: np.ndarray) -> float:
-    """Calculates the Hurst Exponent to verify long-memory persistence in calm states."""
+    """Calculates the Hurst Exponent (H) to verify long-memory persistence."""
     lags = range(2, 20)
     tau = [np.sqrt(np.std(np.subtract(time_series[lag:], time_series[:-lag]))) for lag in lags]
     poly = np.polyfit(np.log(lags), np.log(tau), 1)
-    return poly[0] * 2.0
+    # FIXED: poly[0] is directly the Hurst Exponent (H)
+    return float(poly[0])
 
 def run_inter_crisis_audit(trends_path: str | Path) -> None:
     t_path = Path(trends_path)
@@ -42,21 +42,17 @@ def run_inter_crisis_audit(trends_path: str | Path) -> None:
     df['date'] = pd.to_datetime(df['date'])
     df.columns = df.columns.str.strip()
     
-    # Track the local volatility proxy fallback
-    vol_col = 'market_volatility_x' if 'market_volatility_x' in df.columns else 'market_volatility'
+    vol_col = 'market_volatility' if 'market_volatility' in df.columns else 'market_volatility_x'
     
-    # S&P 500 Truncation Fix
     corrupt_mask = (df['market'] == 'sp500') & (df['date'] < pd.to_datetime('2014-01-01'))
     df_clean = df[~corrupt_mask].reset_index(drop=True)
     
     pivot_df = df_clean[['date', 'market', 'ari_stability', vol_col]].drop_duplicates().sort_values('date')
     
-    # Resolve project root to locate configurations
     script_dir = Path(__file__).resolve().parent
     root_dir = next((p for p in [script_dir] + list(script_dir.parents) if (p / "config").is_dir()), script_dir)
     crisis_config = load_crisis_config(root_dir)
     
-    # Parse chronological crisis boundaries to identify gaps
     crises = sorted(crisis_config.get('crises', []), key=lambda x: pd.to_datetime(x['crisis_start']))
     
     print("\n" + "="*95)
@@ -68,7 +64,6 @@ def run_inter_crisis_audit(trends_path: str | Path) -> None:
     for market in markets:
         m_data = pivot_df[pivot_df['market'] == market].copy().reset_index(drop=True)
         
-        # Identify all data entries that exist EXCLUSIVELY outside of crisis boundaries
         is_tranquil = np.ones(len(m_data), dtype=bool)
         for crisis in crises:
             c_start = pd.to_datetime(crisis['crisis_start'])
@@ -85,7 +80,6 @@ def run_inter_crisis_audit(trends_path: str | Path) -> None:
         print(f"\n▶ Analyzing Tranquil Inter-Crisis Windows for: {market.upper()}")
         print("-" * 75)
         
-        # 1. Structural Moments Summary
         mean_ari = np.mean(ari_vals)
         std_ari = np.std(ari_vals)
         coef_variation = std_ari / mean_ari if mean_ari != 0 else 0.0
@@ -94,21 +88,18 @@ def run_inter_crisis_audit(trends_path: str | Path) -> None:
         print(f"  -> Inter-Crisis Structural Variance: {std_ari:.4f}")
         print(f"  -> Coefficient of Variation (CV)   : {coef_variation:.4f}")
         
-        # 2. Long-Memory Excursion Profile (Hurst Exponent)
-        # H > 0.5 implies persistent trending behavior, H = 0.5 implies brownian noise
         try:
             hurst = calculate_hurst_exponent(ari_vals)
             print(f"  -> Structural Memory (Hurst, H)    : {hurst:.4f}", end="")
             if hurst > 0.55:
-                print(" (Strong Persistent Structure Drift) 📈")
+                print(" (Persistent Structure Drift) 📈")
             elif hurst < 0.45:
-                print(" (Mean-Reverting Mean Shifting) 📉")
+                print(" (Mean-Reverting Structural Shifting) 📉")
             else:
                 print(" (Standard Brownian Walk) 🎲")
         except Exception:
             print("  -> Structural Memory (Hurst, H)    : Estimation Error")
             
-        # 3. Distributional Drift Test (Skewness and Kurtosis)
         skew = stats.skew(ari_vals)
         kurt = stats.kurtosis(ari_vals)
         print(f"  -> Distributional Typography       : Skewness = {skew:.2f} | Ex. Kurtosis = {kurt:.2f}")

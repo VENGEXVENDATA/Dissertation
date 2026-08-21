@@ -1,0 +1,19 @@
+market,algorithm,family,mean_ari,std_ari,corr_louvain_baseline,ardl_r2,durbin_watson,runtime_seconds
+SP500,Louvain,Modularity,0.3725,0.1212,1.0,0.284,2.0995,631.65
+SP500,Leiden,Modularity (Refined),0.3774,0.1213,0.9724,0.2546,2.0851,433.8
+SP500,Infomap,Information Flow,0.4535,0.0794,0.487,0.5136,1.8732,10.25
+SP500,Label Propagation,Local Dynamics,0.3578,0.0855,0.3904,0.3194,2.0622,0.51
+SP500,Spectral Clustering,Spectral / Laplacian,0.3609,0.1274,0.4676,0.1678,2.0332,22.23
+SP500,Hierarchical (HAC),Distance Metric Space,0.3303,0.1296,0.3394,0.1786,1.9841,64.69
+NIFTY50,Louvain,Modularity,0.3182,0.1584,1.0,0.3619,2.1205,40.03
+NIFTY50,Leiden,Modularity (Refined),0.32,0.1597,0.9515,0.3609,2.1324,32.07
+NIFTY50,Infomap,Information Flow,0.3393,0.1546,0.8271,0.3233,2.0954,0.64
+NIFTY50,Label Propagation,Local Dynamics,0.2878,0.2025,0.3386,0.1344,1.9544,0.16
+NIFTY50,Spectral Clustering,Spectral / Laplacian,0.3049,0.1535,0.7371,0.3087,2.0492,1.52
+NIFTY50,Hierarchical (HAC),Distance Metric Space,0.2476,0.1251,0.7685,0.241,1.9887,0.95
+BOVESPA,Louvain,Modularity,0.32,0.2048,1.0,0.1424,2.0209,18.69
+BOVESPA,Leiden,Modularity (Refined),0.3256,0.2081,0.9282,0.1634,2.0431,15.72
+BOVESPA,Infomap,Information Flow,0.7865,0.3846,-0.284,0.2578,1.8782,0.26
+BOVESPA,Label Propagation,Local Dynamics,0.6754,0.4444,-0.0943,0.24,1.9956,0.13
+BOVESPA,Spectral Clustering,Spectral / Laplacian,0.2776,0.174,0.4628,0.2376,2.1564,1.28
+BOVESPA,Hierarchical (HAC),Distance Metric Space,0.2219,0.173,0.5842,0.1624,2.1071,0.35

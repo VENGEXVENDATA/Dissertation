@@ -238,3 +238,372 @@ KeyError: "None of [Index(['date', 'market', 'ari_stability'], dtype='str')] are
 2026-06-25 18:32:32 | pipelines.run_pipeline         | INFO     | Computing 100-run consensus partitions and ARI tracking for BOVESPA...
 2026-06-25 18:32:47 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
 2026-06-25 18:32:47 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | Initializing process engine with 8 available CPUs.
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:12:20 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-21 19:12:20 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | Initializing process engine with 8 available CPUs.
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-21 19:16:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:16:52 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-21 19:16:52 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 10:29:53 | pipelines.run_pipeline         | INFO     | Initializing process engine with 8 available CPUs.
+2026-07-23 10:29:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 10:29:54 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-23 10:29:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 10:29:56 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-23 10:29:56 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 12:22:57 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for SP500...
+2026-07-23 12:39:33 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-23 12:39:33 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 12:39:33 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-23 12:39:33 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 12:39:35 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-23 12:39:35 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 12:40:25 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for NIFTY50...
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-23 12:41:39 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 12:41:45 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for BOVESPA...
+2026-07-23 12:42:20 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-23 12:42:20 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-23 13:27:37 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-23 13:27:38 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:27:38 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-23 13:27:38 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:27:42 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-23 13:27:42 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 13:27:45 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for SP500...
+2026-07-23 13:38:51 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-23 13:38:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:38:51 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-23 13:38:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:38:53 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-23 13:38:53 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 13:38:54 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for NIFTY50...
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-23 13:39:34 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 13:39:35 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for BOVESPA...
+2026-07-23 13:39:54 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-23 13:39:54 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-23 22:19:33 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-23 22:19:33 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:19:33 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-23 22:19:33 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:19:36 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-23 22:19:36 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 22:19:38 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for SP500...
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-23 22:30:51 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 22:30:52 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for NIFTY50...
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 22:31:34 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for BOVESPA...
+2026-07-23 22:31:54 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-23 22:31:54 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-23 23:40:39 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-23 23:40:39 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:40:39 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-23 23:40:39 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:40:42 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-23 23:40:42 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 23:40:43 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for SP500...
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-23 23:51:31 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 23:51:32 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for NIFTY50...
+2026-07-23 23:52:24 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-23 23:52:24 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:52:24 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-23 23:52:24 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-23 23:52:29 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-23 23:52:29 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-23 23:52:30 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking for BOVESPA...
+2026-07-23 23:52:49 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-23 23:52:49 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-24 00:20:35 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-24 00:20:35 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:20:35 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-24 00:20:35 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:20:38 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-24 00:20:38 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 00:20:40 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for SP500...
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-24 00:29:18 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 00:29:19 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for NIFTY50...
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 00:29:53 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for BOVESPA...
+2026-07-24 00:30:10 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-24 00:30:10 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-24 10:26:48 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-24 10:26:48 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:26:48 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-24 10:26:48 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:26:50 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-24 10:26:50 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 10:26:52 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for SP500...
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-24 10:35:01 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 10:35:02 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for NIFTY50...
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-24 10:35:36 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for BOVESPA...
+2026-07-24 10:35:54 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-24 10:35:54 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-28 18:03:09 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-28 18:03:09 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:03:09 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-28 18:03:09 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:03:21 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-28 18:03:21 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:03:26 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for SP500...
+2026-07-28 18:13:00 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-28 18:13:00 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:13:00 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-28 18:13:00 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:13:01 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-28 18:13:01 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:13:02 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for NIFTY50...
+2026-07-28 18:13:36 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-28 18:13:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:13:36 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-28 18:13:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:13:37 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-28 18:13:37 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:13:37 | pipelines.run_pipeline         | INFO     | Computing 100-run LEIDEN consensus partitions and ARI tracking for BOVESPA...
+2026-07-28 18:13:54 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-28 18:13:54 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-07-28 18:19:46 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-07-28 18:19:46 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:19:46 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-28 18:19:46 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:19:48 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-28 18:19:48 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:19:50 | pipelines.run_pipeline         | INFO     | Computing 100-run LOUVAIN consensus partitions and ARI tracking for SP500...
+2026-07-28 18:31:22 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-07-28 18:31:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:31:22 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-07-28 18:31:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:31:23 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-07-28 18:31:23 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:31:23 | pipelines.run_pipeline         | INFO     | Computing 100-run LOUVAIN consensus partitions and ARI tracking for NIFTY50...
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-07-28 18:32:07 | pipelines.run_pipeline         | INFO     | Computing 100-run LOUVAIN consensus partitions and ARI tracking for BOVESPA...
+2026-07-28 18:32:28 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-07-28 18:32:28 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-06 15:30:24 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-06 15:30:24 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:30:24 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-06 15:30:24 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:30:28 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-06 15:30:28 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 15:30:32 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LOUVAIN] for SP500...
+2026-08-06 15:46:08 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-06 15:46:08 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:46:08 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-06 15:46:08 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:46:09 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-06 15:46:09 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 15:46:09 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LOUVAIN] for NIFTY50...
+2026-08-06 15:47:13 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-06 15:47:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:47:13 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-06 15:47:13 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 15:47:14 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-06 15:47:14 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 15:47:14 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LOUVAIN] for BOVESPA...
+2026-08-06 15:47:41 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-06 15:47:41 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-06 16:12:44 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-06 16:12:44 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:12:44 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-06 16:12:44 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:12:48 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-06 16:12:48 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 16:12:52 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for SP500...
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-06 16:13:20 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 16:13:21 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for NIFTY50...
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for BOVESPA...
+2026-08-06 16:13:22 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-06 16:13:23 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-20 15:15:17 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-20 15:15:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:15:17 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-20 15:15:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:15:22 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-20 15:15:22 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 15:15:26 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for SP500...
+2026-08-20 15:16:17 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-20 15:16:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:16:17 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-20 15:16:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:16:18 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-20 15:16:18 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 15:16:18 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for NIFTY50...
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-20 15:16:19 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 15:16:21 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for BOVESPA...
+2026-08-20 15:16:23 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-20 15:16:23 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-20 16:01:06 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-20 16:01:06 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:06 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-20 16:01:06 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:08 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-20 16:01:08 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 16:01:12 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for SP500...
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-20 16:01:41 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 16:01:42 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for NIFTY50...
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-20 16:01:43 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 16:01:44 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for BOVESPA...
+2026-08-20 16:01:44 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-20 16:01:44 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-20 19:55:03 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-20 19:55:03 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:03 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-20 19:55:03 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:06 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-20 19:55:06 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 19:55:12 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for SP500...
+2026-08-20 19:55:52 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-20 19:55:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:52 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-20 19:55:52 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:53 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-20 19:55:53 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for NIFTY50...
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-20 19:55:54 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 19:55:55 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [INFOMAP] for BOVESPA...
+2026-08-20 19:55:55 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-20 19:55:55 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv
+2026-08-20 21:02:36 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-20 21:02:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:36 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-20 21:02:36 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:38 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-20 21:02:38 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LIEDEN] for SP500...
+2026-08-20 21:02:44 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for sp500: Unrecognized algorithm setting: 'lieden'
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 147, in main
+    raise ValueError(f"Unrecognized algorithm setting: '{algorithm}'")
+ValueError: Unrecognized algorithm setting: 'lieden'
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-20 21:02:44 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LIEDEN] for NIFTY50...
+2026-08-20 21:02:45 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for nifty50: Unrecognized algorithm setting: 'lieden'
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 147, in main
+    raise ValueError(f"Unrecognized algorithm setting: '{algorithm}'")
+ValueError: Unrecognized algorithm setting: 'lieden'
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-20 21:02:45 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LIEDEN] for BOVESPA...
+2026-08-20 21:02:45 | pipelines.run_pipeline         | ERROR    | Pipeline crashed on market processing for bovespa: Unrecognized algorithm setting: 'lieden'
+Traceback (most recent call last):
+  File "/home/s2843292/Dissertation/Dissertation/pipelines/run_pipeline.py", line 147, in main
+    raise ValueError(f"Unrecognized algorithm setting: '{algorithm}'")
+ValueError: Unrecognized algorithm setting: 'lieden'
+2026-08-20 21:02:45 | pipelines.run_pipeline         | ERROR    | [CRITICAL FAILURE] Pipeline execution finished but zero master files were written.
+2026-08-21 02:18:30 | pipelines.run_pipeline         | INFO     | Initializing process engine with 4 available CPUs.
+2026-08-21 02:18:30 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:18:30 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-08-21 02:18:30 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:18:32 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-08-21 02:18:32 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-21 02:18:38 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LEIDEN] for SP500...
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | SP500 processing completed successfully.
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: NIFTY50
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | NIFTY50 partitioned into 171 temporal windows.
+2026-08-21 02:26:22 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-21 02:26:23 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LEIDEN] for NIFTY50...
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | NIFTY50 processing completed successfully.
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: BOVESPA
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | BOVESPA partitioned into 172 temporal windows.
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+2026-08-21 02:26:56 | pipelines.run_pipeline         | INFO     | Computing consensus partitions and ARI tracking using [LEIDEN] for BOVESPA...
+2026-08-21 02:27:13 | pipelines.run_pipeline         | INFO     | BOVESPA processing completed successfully.
+2026-08-21 02:27:13 | pipelines.run_pipeline         | INFO     | [SUCCESS] Pristine tracking records saved to: data/processed/master_methodology_trends.csv

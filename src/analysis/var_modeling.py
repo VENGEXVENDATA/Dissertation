@@ -1,9 +1,9 @@
 """
 src/analysis/var_modeling.py
 ============================
-Fits Vector Autoregressive (VAR) models to capture the joint dynamic feedback 
+Fits Vector Autoregression (VAR) models to capture the joint dynamic feedback 
 between network stability and implied volatility. Computes Granger Causality 
-and simulates Impulse Response Functions (IRFs) with bootstrap confidence bands.
+and simulates Impulse Response Functions (IRFs) with 95% confidence bands.
 """
 
 from __future__ import annotations
@@ -36,22 +36,28 @@ def run_var_analysis(trends_path: str | Path, max_lags: int = 5, steps: int = 15
     df_clean = df[~corrupt_mask].reset_index(drop=True)
 
     pivot_df = df_clean[['date', 'market', 'ari_stability', vol_col]].drop_duplicates().sort_values('date')
-    markets = pivot_df['market'].unique()
+    
+    # Filter markets that have sufficient sample size prior to plotting grid allocation
+    valid_markets = [
+        m for m in pivot_df['market'].unique() 
+        if len(pivot_df[pivot_df['market'] == m].dropna()) >= 50
+    ]
+
+    if not valid_markets:
+        print("[WARNING] No markets met minimum sample size requirements for VAR.")
+        return
 
     print("\n" + "="*95)
     print("     STAGE 4: JOINT DYNAMICS VIA VECTOR AUTOREGRESSION (VAR) & GRANGER CAUSALITY")
     print("="*95)
 
-    # Prepare diagnostic plotting
-    fig, axes = plt.subplots(len(markets), 1, figsize=(10, 12), sharex=True)
-    if len(markets) == 1:
+    # Dynamic subplot allocation based strictly on valid active markets
+    fig, axes = plt.subplots(len(valid_markets), 1, figsize=(10, 4 * len(valid_markets)), sharex=True)
+    if len(valid_markets) == 1:
         axes = [axes]
 
-    for idx, market in enumerate(markets):
+    for idx, market in enumerate(valid_markets):
         m_data = pivot_df[pivot_df['market'] == market].dropna().copy()
-        
-        if len(m_data) < 50:
-            continue
 
         print(f"\n▶ Modeling VAR Framework for: {market.upper()}")
         print("-" * 75)
@@ -81,9 +87,7 @@ def run_var_analysis(trends_path: str | Path, max_lags: int = 5, steps: int = 15
         print(f"  -> Model Log-Likelihood: {results.llf:.2f}")
 
         # 2. Execute Granger Causality Tests
-        # Test 1: Does Volatility Granger-Cause Network ARI?
         gc_vol_to_ari = results.test_causality('Network_ARI', 'Volatility', kind='f')
-        # Test 2: Does Network ARI Granger-Cause Volatility?
         gc_ari_to_vol = results.test_causality('Volatility', 'Network_ARI', kind='f')
 
         print(f"  -> Granger Causality: Volatility ──> Network ARI | p-val: {gc_vol_to_ari.pvalue:.5f}" + 
@@ -91,24 +95,30 @@ def run_var_analysis(trends_path: str | Path, max_lags: int = 5, steps: int = 15
         print(f"  -> Granger Causality: Network ARI ──> Volatility | p-val: {gc_ari_to_vol.pvalue:.5f}" + 
               (" (*)" if gc_ari_to_vol.pvalue < 0.05 else " (Not Sig)"))
 
-        # 3. Simulate and Plot Impulse Response Functions (IRFs)
-        # We want to see how a shock to Volatility propagates into Network ARI
+        # 3. Simulate Impulse Response Functions (IRFs) with 95% Error Bands
         irf = results.irf(steps)
         
-        # FIXED: Pull from the .irfs array which tracks (periods, to_var, from_var)
-        # Position 0 = Network_ARI, Position 1 = Volatility
-        response = irf.irfs[:, 0, 1]  # Volatility shock -> Network ARI response
+        # Pull main point estimates (Position 0 = Network_ARI, Position 1 = Volatility)
+        response = irf.irfs[:, 0, 1]       # Volatility shock -> Network ARI response
+        stderr = irf.stderr(orth=False)[:, 0, 1]  # Standard errors for confidence interval
         
-        # Plot main response curve on the assigned subplot axis
+        lower_bound = response - 1.96 * stderr
+        upper_bound = response + 1.96 * stderr
+        
+        # Plot point estimate curve
         axes[idx].plot(range(steps + 1), response, label='Response of ARI to Volatility Shock', color='#ff7f0e', linewidth=2)
         
+        # Fill 95% confidence interval band
+        axes[idx].fill_between(range(steps + 1), lower_bound, upper_bound, color='#ff7f0e', alpha=0.2, label='95% Confidence Band')
+        
         # Add baseline reference line
-        axes[idx].axhline(0, color='gray', linestyle='--', alpha=0.5)
+        axes[idx].axhline(0, color='black', linestyle='--', alpha=0.6)
         axes[idx].set_title(f"{market.upper()}: Impulse Response Function (VIX Shock → Network ARI)", loc='left', fontsize=11, fontweight='bold')
         axes[idx].set_ylabel("Response (Std. Dev)")
+        axes[idx].legend(loc='upper right', frameon=True, facecolor='white')
         axes[idx].grid(True, linestyle=':', alpha=0.6)
         
-        if idx == len(markets) - 1:
+        if idx == len(valid_markets) - 1:
             axes[idx].set_xlabel("Forecast Horizon (Trading Days after Shock)")
 
     plt.tight_layout()

@@ -1,0 +1,26 @@
+2026-07-21 19:12:17 | src.utils.timer                | INFO     | Starting: Approved Parallel Dissertation Research Pipeline
+2026-07-21 19:12:17 | src.utils.config_loader        | INFO     | Project config loaded from config/settings.yaml
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | Initializing process engine with 8 available CPUs.
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | PROCESSING ACCORDING TO DISSERTATION METHODOLOGY: SP500
+2026-07-21 19:12:17 | pipelines.run_pipeline         | INFO     | ======================================================================
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped APO due to an extensive flatline streak of 312 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CBOE due to an extensive flatline streak of 112 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped CPAY due to an extensive flatline streak of 240 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GNRC due to an extensive flatline streak of 27 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped GM due to an extensive flatline streak of 222 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HCA due to an extensive flatline streak of 298 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped HII due to an extensive flatline streak of 306 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KMI due to an extensive flatline streak of 280 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped KKR due to an extensive flatline streak of 133 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped LYB due to an extensive flatline streak of 79 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped MPC due to an extensive flatline streak of 372 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped NXPI due to an extensive flatline streak of 150 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped SW due to an extensive flatline streak of 56 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TRGP due to an extensive flatline streak of 234 days.
+2026-07-21 19:12:19 | src.correlation.correlation_matrix | WARNING  | SP500: Dropped TSLA due to an extensive flatline streak of 122 days.
+2026-07-21 19:12:20 | src.correlation.correlation_matrix | INFO     | SP500 Universe filtering: 422 of 500 tickers passed all quality checks.
+2026-07-21 19:12:20 | src.correlation.correlation_matrix | INFO     | Segmented returns matrix into 174 historical chunks (w=126, step=21).
+2026-07-21 19:12:20 | pipelines.run_pipeline         | INFO     | SP500 partitioned into 174 temporal windows.
+2026-07-21 19:12:20 | pipelines.run_pipeline         | INFO     | Spawning process workers for window evaluation...
+[2026-07-21T19:15:06.252] error: *** JOB 3562601 ON opencast CANCELLED AT 2026-07-21T19:15:06 DUE to SIGNAL Terminated ***

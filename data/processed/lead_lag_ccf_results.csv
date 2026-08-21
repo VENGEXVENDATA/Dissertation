@@ -1,0 +1,4 @@
+market,peak_lag_trading_days,peak_correlation,daily_observations
+sp500,60,0.30424393873569977,2752
+nifty50,-11,-0.14653203775713913,3553
+bovespa,-49,-0.19418468215411458,3592
